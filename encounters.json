@@ -1,47 +1,54 @@
 {
     "encounters": [
         { 
-            "name": "Goblin", 
+            "name": "Hans (Mongrelfolk)", 
             "cr": 0.25, 
-            "notes": "Cowardly but cunning. Attacks in ambushes and flees at half HP."
+            "notes": "Mongrelfolk potion seller who talks to his bag, 'Baggy'. Sells gear <25gp. Roll d6 for rotating item. Found on forest paths; paranoid but kind."
         },
         { 
-            "name": "Orc", 
-            "cr": 0.5, 
-            "notes": "Aggressive and tribal. Charges the closest enemy and rarely retreats."
+            "name": "Swarm of Ravens (1d4)[3]", 
+            "cr": "1/4 each (Total XP: 150 / Adjusted XP: 300 with x2 multiplier)", 
+            "notes": "Movement is erratic and coordinated, like a single mind guides them."
         },
-        { 
-            "name": "Troll", 
-            "cr": 1.0, 
-            "notes": "Regenerates each round unless hit with fire or acid. Brutally strong."
+        {
+            "name": "Dire Wolves (1d6)[4]",
+            "cr": "1 each (Total XP: 800 / Adjusted XP: 1,600 using ×2 multiplier)",
+            "notes": "Circle in silence, only the crunch of snow or leaves betrays them."
         },
-        { 
-            "name": "Wandering Merchant", 
-            "notes": "Sells rare scrolls.  Will trade for information."
+        {
+            "name": "Berserker (1d4)[1]",
+            "cr": "2 (Total XP: 450 / Adjusted XP: 450 using ×1 multiplier)",
+            "notes": "Covered in crude scars some self-inflicted."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name": "Scarecrow (1d6)[4]",
+            "cr": "1 each (Total XP: 800 / Adjusted XP: 1,600 using ×2 multiplier)",
+            "notes": "Immune to pain, they fight until they burn."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name": "Scarecrow (1d6)[1]",
+            "cr": "1 each (Total XP: 800 / Adjusted XP: 2,400 using ×3 multiplier)",
+            "notes": "Immune to pain, they fight until they burn."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name": "Druid + Twig Blights (2d6)[9]",
+            "cr": "CR: Druid (CR 2), Twig Blights (CR 1/8 each) — Total XP: 675 / Adjusted XP: 1,687 using ×2.5 multiplier",
+            "notes": "Twig Blights move in staggered rhythm, like broken marionettes."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name": "Zombies (3d6)[14]",
+            "cr": "1/4 each — Total XP: 700 / Adjusted XP: 2,100 using ×3 multiplier",
+            "notes": "Undead Fortitude allows them to rise unless struck with radiant damage or a critical hit."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name":"Zombies (3d6)[8]",
+            "cr": "1/4 each — Total XP: 400 / Adjusted XP: 1,000 using ×2.5 multiplier",
+            "notes": "Immune to poison damage and the poisoned condition."
         },
-        { 
-            "name": "Drunk Bard", 
-            "notes": "Unpredictable and nosy.  May follow the party."
+        {
+            "name": "Swarm of Bats (1d8)[2]",
+            "cr": "1/4 each — Total XP: 100 / Adjusted XP: 150 using ×1.5 multiplier",
+            "notes": "Swarm reacts as a single entity, impossible to split apart."
         }
     ]
 }

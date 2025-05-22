@@ -10,11 +10,17 @@ tick_marks = ""
 
 # Reaction table (2d6)
 reaction_table = {
-    (2, 3): "Immediate Attack",
-    (4, 5): "Hostile",
-    (6, 7, 8): "Cautious/Threatening",
-    (9, 10): "Neutral", 
-    (11, 12): "Amiable"
+    2: "Immediate Attack",
+    3: "Immediate Attack",
+    4: "Hostile",
+    5: "Hostile",
+    6: "Cautious/Threatening",
+    7: "Cautious/Threatening",
+    8: "Cautious/Threatening",
+    9: "Neutral",
+    10: "Neutral",
+    11: "Amiable",
+    12: "Amiable"
 }
 
 def roll_die(sides):
@@ -25,10 +31,8 @@ def roll_2d6():
 
 def get_reaction():
     roll = roll_2d6()
-    for key, result in reaction_table.items():
-         if roll in key:
-              return roll, result
-         return roll, "Unclear"
+    result = reaction_table.get(roll, "Unclear")
+    return roll, result
  
 def get_random_encounter():
      roll = roll_die(10) -1 # d10 -> index 0-9
@@ -53,10 +57,18 @@ def add_tick():
           print(f" - Notes: {encounter.get('notes', 'No notes.')}")
           print(f" - Distance: {distance} feet")
           print(f" - Reaction Roll: {reaction_roll} -> {reaction}")
+
+          # Log to file
+          with open("encounter_log.txt", "a", encoding="utf-8", errors="ignore") as log:
+               log.write(f"Tick {tick_count}: {encounter['name']} | "
+                    f"{encounter.get('notes', 'No notes.')} | "
+                    f"Distance: {distance}ft | "
+                    f"Reaction: {reaction_roll} -> {reaction}\n")
+
      else:
         print("No encounter this tick.")
 
-# Run the turn loop
-for _ in range(10): # Change to however many ticks you want to simulate
+
+while True: 
      input("\nPress Enter to take a Dungeon Turn...")
      add_tick()

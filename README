@@ -1,0 +1,46 @@
+HollowSign is a minimalist encounter tracker built for Dungeons & Dragons 5e Dungeon Masters. It tracks dungeon turns, rolls for encounters, determines NPC/monster reactions, and logs each event with flavorful, horror-themed notes — all in a streamlined terminal interface.
+
+---
+
+## 🔮 Features
+
+- ⏱️ Tracks dungeon time in 10-minute ticks
+- 🎲 Rolls for random encounters using a custom d10 table
+- 🧠 Adds 2d6-based reaction rolls for monster behavior
+- 📜 Logs each encounter to `encounter_log.txt` with tick tracking
+- ✍️ Includes vivid, Curse of Strahd-style monster notes
+- ⚙️ Powered by a single editable `encounters.json` file
+
+---
+
+## 🚀 How to Use
+
+1. **Open your HollowSign project folder in VS Code**  
+   (If you used GitHub Desktop, open the folder you cloned or created there.)
+
+2. **Make sure you have Python 3 installed**  
+   [Download Python](https://www.python.org/downloads/)
+
+3. **Run the script**  
+   - Open `hollow_sign.py` in VS Code  
+   - Right-click anywhere in the code and choose **"Run Python File in Terminal"**
+
+4. **Press Enter** to advance time in 10-minute dungeon turns.  
+   If an encounter is triggered, it will roll a reaction and log all details.
+
+---
+
+## 📁 Files
+
+- `hollow_sign.py` — main program file  
+- `encounter_log.txt` — automatically generated log of all encounters  
+- `encounters.json` — your editable list of up to 10 encounter entries
+
+### Example `encounters.json`:
+```json
+{
+  "encounters": [
+    { "name": "Orc Raiders", "notes": "Aggressive patrol of 3 orcs" },
+    { "name": "Witch in the Trees", "notes": "Offers knowledge... for a price" }
+  ]
+}
