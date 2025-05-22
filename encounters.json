@@ -1,0 +1,47 @@
+{
+    "encounters": [
+        { 
+            "name": "Goblin", 
+            "cr": 0.25, 
+            "notes": "Cowardly but cunning. Attacks in ambushes and flees at half HP."
+        },
+        { 
+            "name": "Orc", 
+            "cr": 0.5, 
+            "notes": "Aggressive and tribal. Charges the closest enemy and rarely retreats."
+        },
+        { 
+            "name": "Troll", 
+            "cr": 1.0, 
+            "notes": "Regenerates each round unless hit with fire or acid. Brutally strong."
+        },
+        { 
+            "name": "Wandering Merchant", 
+            "notes": "Sells rare scrolls.  Will trade for information."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        },
+        { 
+            "name": "Drunk Bard", 
+            "notes": "Unpredictable and nosy.  May follow the party."
+        }
+    ]
+}
